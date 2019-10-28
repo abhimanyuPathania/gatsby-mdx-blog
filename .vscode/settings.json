@@ -1,0 +1,7 @@
+{
+  "editor.wordWrapColumn": 100,
+  "editor.wordWrap": "bounded",
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  }
+}
