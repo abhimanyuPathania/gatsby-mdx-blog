@@ -13,8 +13,15 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    `gatsby-plugin-mdx`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        // https://github.com/gatsbyjs/gatsby/issues/15486#issuecomment-510153237
+        gatsbyRemarkPlugins: [`gatsby-remark-images`],
+        plugins: [`gatsby-remark-images`],
+      },
+    },
   ],
 };

@@ -30,7 +30,7 @@ const PostCard = ({ post }) => {
             <span> / {date}</span>
           </h6>
           <p>{excerpt}</p>
-          <Link to={slug} className={styles.link}>
+          <Link to={`/${slug}`} className={styles.link}>
             read more
           </Link>
         </div>
