@@ -5,8 +5,6 @@ import PostCard from '../PostCard';
 import styles from './styles.module.css';
 
 const PostList = ({ posts }) => {
-  console.log('PostList:', posts);
-
   return (
     <section className={styles.posts}>
       <h1>john doe</h1>

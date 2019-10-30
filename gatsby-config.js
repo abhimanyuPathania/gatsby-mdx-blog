@@ -5,6 +5,12 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Gatsby MDX Blog',
+    description: 'A blog built using Gatsby and MDX',
+    author: 'abhimanyu',
+    canonicalUrl: 'https://roadsback.netlify.com',
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,5 +29,6 @@ module.exports = {
         plugins: [`gatsby-remark-images`],
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };
