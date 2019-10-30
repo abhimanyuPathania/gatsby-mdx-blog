@@ -13,6 +13,7 @@ export const query = graphql`
             title
             date(formatString: "Do MMMM, YYYY")
             slug
+            author
             image {
               childImageSharp {
                 fluid {

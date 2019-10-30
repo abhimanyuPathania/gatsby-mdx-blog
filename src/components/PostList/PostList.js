@@ -2,11 +2,21 @@ import React from 'react';
 
 import PostCard from '../PostCard';
 
-const PostList = () => {
+import styles from './styles.module.css';
+
+const PostList = ({ posts }) => {
+  console.log('PostList:', posts);
+
   return (
-    <div>
-      Post list <PostCard />
-    </div>
+    <section className={styles.posts}>
+      <h1>john doe</h1>
+      <h4>personal blog</h4>
+      <div className={styles.center}>
+        {posts.map(({ node }, i) => (
+          <PostCard post={node} key={i} />
+        ))}
+      </div>
+    </section>
   );
 };
 
